@@ -1,0 +1,24 @@
+{
+  "name": "tony",
+  "description": "css framework",
+  "main": "",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "css",
+    "framework"
+  ],
+  "authors": [
+    "Dmitriy Nevskiy"
+  ],
+  "license": "Dmitriy Nevskiy",
+  "homepage": "nevskiy.com.ua",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
