@@ -1,14 +1,12 @@
 {
-  "name": "mytony",
+  "name": "antonia",
   "version": "0.0.1",
   "description": "Modern CSS framework based on Flexbox",
-  "main": "tony.scss",
-  "moduleType": [
-    "globals"
-  ],
+  "main": "antonia.scss",
   "keywords": [
     "css",
     "sass",
+    "scss",
     "flexbox",
     "responsive",
     "framework"
@@ -17,7 +15,7 @@
     "Dmitriy Nevskiy <dmitriy.a.nevskiy@gmail.com>"
   ],
   "license": "MIT",
-  "homepage": "nevskiy.com.ua",
+  "homepage": "http://nevskiy.com.ua",
   "ignore": [
     "**/.*",
     "node_modules",
