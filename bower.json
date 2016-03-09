@@ -1,18 +1,22 @@
 {
-  "name": "tony",
-  "description": "css framework",
-  "main": "",
+  "name": "mytony",
+  "version": "0.0.1",
+  "description": "Modern CSS framework based on Flexbox",
+  "main": "tony.scss",
   "moduleType": [
     "globals"
   ],
   "keywords": [
     "css",
+    "sass",
+    "flexbox",
+    "responsive",
     "framework"
   ],
   "authors": [
-    "Dmitriy Nevskiy"
+    "Dmitriy Nevskiy <dmitriy.a.nevskiy@gmail.com>"
   ],
-  "license": "Dmitriy Nevskiy",
+  "license": "MIT",
   "homepage": "nevskiy.com.ua",
   "ignore": [
     "**/.*",
