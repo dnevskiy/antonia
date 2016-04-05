@@ -124,7 +124,7 @@
 .all-link {
     margin-top: 12px;
     display: inline-block;
-    color: $color--black;
+    color: #fff;
     text-decoration: none;
 }
 
@@ -140,7 +140,7 @@
         display: block;
         margin-bottom: 20px;
         text-decoration: none;
-        color: $color--black;
+        color: #fff;
         text-align: left;
         &:hover img{
             @include transition-property(filter);

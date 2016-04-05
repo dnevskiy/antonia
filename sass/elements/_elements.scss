@@ -2,12 +2,10 @@
 @import 'buttons';
 @import 'card';
 @import 'blocks';
-// @import 'header';
-// @import 'hero';
-// @import 'container';
-// @import 'section';
-// @import 'navigation';
-// @import 'footer';
+@import 'images';
+@import 'messages';
+@import 'notifications';
+@import 'titles';
 
 .box {
   @extend .block;

@@ -1,40 +1,34 @@
-/**
- * Header
- * -----------------------------------------------------------------------------
- */
-
- .header {
+.header {
   @include clearfix;
+  font-size: 16px;
   background: white;
+  box-shadow: 0 1px 2px rgba(black, 0.1);
   display: flex;
+  height: 50px;
   line-height: 24px;
   position: relative;
   text-align: center;
   z-index: 2;
+
   .container {
     align-items: stretch;
+    box-shadow: 0 1px 0 rgba($border, 0.3);
     display: flex;
     width: 100%;
-  }
-  &.has-shadow {
-    box-shadow: 0 1px 2px rgba(black, 0.1);
-  }
-  @include mobile {
-    .container {
-      flex-direction: column;
-    }
   }
 
   @include tablet {
     height: $header-height;
   }
+
+  .sticky {
+    position: fixed;
+  }
 }
 
 .header-toggle {
   @extend .hamburger;
-  position: absolute;
-  right: 0;
-  top: 0;
+
   @include tablet {
     display: none;
   }
@@ -45,36 +39,35 @@
 .header-item {
   align-items: center;
   display: flex;
-  padding: 10px;
+
   img {
-    max-height: 24px;
+    max-height: 89px;
   }
+
   a {
-    color: $text;
-    flex: 1;
+    //color: $text;
+
     &:hover {
-      color: $link-hover;
+      //color: $link-hover;
     }
+
     &.is-active {
       color: $link-active;
     }
   }
+
   .fa {
     font-size: 21px;
     line-height: 24px;
-  }
-  .button + .button {
-    margin-left: 10px;
-  }
-  @include mobile {
-    text-align: left;
   }
 }
 
 .header-icon {
   @include fa(14px, 24px);
+
   color: $text;
   margin: 0 5px;
+
   &:hover {
     color: $link-hover;
   }
@@ -88,9 +81,11 @@
   height: $header-height;
   line-height: 24px;
   padding: 13px 15px;
+
   &:hover {
     border-bottom: 1px solid $link;
   }
+
   &.is-active {
     border-bottom: 3px solid $link;
     color: $link;
@@ -106,9 +101,6 @@
   overflow: hidden;
   overflow-x: auto;
   white-space: nowrap;
-  @include mobile {
-    height: $header-height;
-  }
 
   @include desktop {
     .header-item:first-child {
@@ -117,11 +109,21 @@
   }
 }
 
+.header-center {
+  align-items: stretch;
+  display: flex;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+}
+
 .header-right {
   align-items: stretch;
+
   @include tablet {
     display: flex;
   }
+
 
   @include desktop {
     .header-item:last-child {
@@ -136,12 +138,14 @@
   justify-content: center;
   text-align: center;
   width: 100%;
+
   & > .header-item {
     align-items: stretch;
     display: flex;
     flex: 1;
     justify-content: center;
     padding: 0;
+
     & > a {
       align-items: center;
       display: flex;
@@ -153,12 +157,20 @@
 
 .header-menu {
   @include mobile {
+    background: white;
     box-shadow: 0 4px 7px rgba(black, 0.1);
     display: none;
+    min-width: 120px;
+    position: absolute;
+    right: 0;
+    top: 50px;
+    z-index: 100;
+
     .header-item {
       border-top: 1px solid rgba($border, 0.5);
       padding: 10px;
     }
+
     &.is-active {
       display: block;
     }
@@ -169,24 +181,30 @@
 
 .header.is-centered {
   justify-content: center;
+
   .header-left,
+  .header-center,
   .header-right {
     justify-content: center;
   }
 }
 
 .header.is-small {
-  background: $background;
+  background: white;
   box-shadow: none;
   height: 40px;
   z-index: 1;
+  font-size: 18px;
+
   .container {
     height: 40px;
   }
+
   .header-tab {
     font-size: 13px;
     height: 40px;
     padding: 8px 10px;
+
     &:hover,
     &.is-active {
       border-bottom-width: 2px;

@@ -11,7 +11,7 @@
     &:hover {
       color: $color--link-hover;
     }
-    &:not(.icon) {
+    &:not(.icon,.button) {
       border-bottom: 1px solid $color--border;
       &:hover {
         border-bottom-color: $color--link;

@@ -8,10 +8,16 @@
 
 @import 'utilities/utilities';
 
+/* Config
+ * -------------------- */
+
+@import "config/variables";
+@import "config/generated-variables";
+
 /* Foundation
  * -------------------- */
 
-@import 'foundation/base';
+@import 'base/base';
 
 /* Components
  * -------------------- */
